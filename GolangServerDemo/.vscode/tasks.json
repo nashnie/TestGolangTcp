@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "go",
+    //"args": [],
+    "showOutput":"always",
+    "isShellCommand": true,
+    "echoCommand": true,
+    "suppressTaskName":true,
+    "options": {
+        "env": {
+            "GOPATH":"E:\\LearnGolang\\bin"
+        }
+    },
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": ["build", "-v", "${file}"],
+            "isBuildCommand": true
+        }
+    ]
+}
